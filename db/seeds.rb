@@ -80,20 +80,16 @@ DonationSite.find_or_create_by!(name: "Eagleton Country Club") do |location|
   location.organization = pdx_org
 end
 
-Partner.find_or_create_by!(name: "Pawnee Parent Service", email: "someone@pawneeparent.org", status: :approved) do |partner|
-  partner.organization = pdx_org
-end
-Partner.find_or_create_by!(name: "Pawnee Homeless Shelter", email: "anyone@pawneehomelss.com", status: :invited) do |partner|
-  partner.organization = pdx_org
-end
-Partner.find_or_create_by!(name: "Pawnee Pregnancy Center", email: "contactus@pawneepregnancy.com", status: :invited) do |partner|
-  partner.organization = pdx_org
-end
-Partner.find_or_create_by!(name: "Pawnee Family Center", email: "families@pawneefamilies.org", status: :uninvited) do |partner|
-  partner.organization = pdx_org
-end
-Partner.find_or_create_by!(name: "Pawnee Senior Citizens Center", email: "help@pscc.org", status: :recertification_required) do |partner|
-  partner.organization = pdx_org
+[
+  ["Pawnee Parent Service",         "someone@pawneeparent.org",      :approved],
+  ["Pawnee Homeless Shelter",       "anyone@pawneehomelss.com",      :invited],
+  ["Pawnee Pregnancy Center",       "contactus@pawneepregnancy.com", :invited],
+  ["Pawnee Family Center",          "families@pawneefamilies.org",   :uninvited],
+  ["Pawnee Senior Citizens Center", "help@pscc.org",                 :recertification_required],
+].each do |name, email, status|
+  Partner.find_or_create_by!(name: name, email: email, status: status) do |partner|
+    partner.organization = pdx_org
+  end
 end
 
 inv_arbor = StorageLocation.find_or_create_by!(name: "Bulk Storage Location") do |inventory|
