@@ -1,3 +1,8 @@
+@mixin nav-colors {
+  background: rgba($diaper-color-black, 0.1);
+  color: $diaper-color-neutral-96;
+}
+
 /*
  * Skin: Blue
  * ----------
@@ -15,15 +20,13 @@
 .skin-blue .main-header .navbar .nav .open > a:hover,
 .skin-blue .main-header .navbar .nav .open > a:focus,
 .skin-blue .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-blue .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-blue .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
@@ -157,15 +160,13 @@
 .skin-blue-light .main-header .navbar .nav .open > a:hover,
 .skin-blue-light .main-header .navbar .nav .open > a:focus,
 .skin-blue-light .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-blue-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-blue-light .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-blue-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
@@ -225,8 +226,7 @@
 }
 .skin-blue-light .sidebar-menu > li:hover > a,
 .skin-blue-light .sidebar-menu > li.active > a {
-  color: $diaper-color-black;
-  background: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-blue-light .sidebar-menu > li.active {
   border-left-color: $diaper-color-blue-49;
@@ -568,8 +568,7 @@
 }
 .skin-black-light .sidebar-menu > li:hover > a,
 .skin-black-light .sidebar-menu > li.active > a {
-  color: $diaper-color-black;
-  background: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-black-light .sidebar-menu > li.active {
   border-left-color: $diaper-color-white;
@@ -652,15 +651,13 @@
 .skin-green .main-header .navbar .nav .open > a:hover,
 .skin-green .main-header .navbar .nav .open > a:focus,
 .skin-green .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-green .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-green .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-green .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
@@ -786,15 +783,13 @@
 .skin-green-light .main-header .navbar .nav .open > a:hover,
 .skin-green-light .main-header .navbar .nav .open > a:focus,
 .skin-green-light .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-green-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-green-light .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-green-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
@@ -854,8 +849,7 @@
 }
 .skin-green-light .sidebar-menu > li:hover > a,
 .skin-green-light .sidebar-menu > li.active > a {
-  color: $diaper-color-black;
-  background: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-green-light .sidebar-menu > li.active {
   border-left-color: $diaper-color-green-33;
@@ -938,15 +932,13 @@
 .skin-red .main-header .navbar .nav .open > a:hover,
 .skin-red .main-header .navbar .nav .open > a:focus,
 .skin-red .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-red .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-red .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-red .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
@@ -1072,15 +1064,13 @@
 .skin-red-light .main-header .navbar .nav .open > a:hover,
 .skin-red-light .main-header .navbar .nav .open > a:focus,
 .skin-red-light .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-red-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-red-light .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-red-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
@@ -1140,8 +1130,7 @@
 }
 .skin-red-light .sidebar-menu > li:hover > a,
 .skin-red-light .sidebar-menu > li.active > a {
-  color: $diaper-color-black;
-  background: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-red-light .sidebar-menu > li.active {
   border-left-color: $diaper-color-red-55;
@@ -1224,15 +1213,13 @@
 .skin-yellow .main-header .navbar .nav .open > a:hover,
 .skin-yellow .main-header .navbar .nav .open > a:focus,
 .skin-yellow .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-yellow .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-yellow .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-yellow .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
@@ -1358,15 +1345,13 @@
 .skin-yellow-light .main-header .navbar .nav .open > a:hover,
 .skin-yellow-light .main-header .navbar .nav .open > a:focus,
 .skin-yellow-light .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-yellow-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-yellow-light .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-yellow-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
@@ -1510,15 +1495,13 @@
 .skin-purple .main-header .navbar .nav .open > a:hover,
 .skin-purple .main-header .navbar .nav .open > a:focus,
 .skin-purple .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-purple .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-purple .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-purple .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
@@ -1644,15 +1627,13 @@
 .skin-purple-light .main-header .navbar .nav .open > a:hover,
 .skin-purple-light .main-header .navbar .nav .open > a:focus,
 .skin-purple-light .main-header .navbar .nav > .active > a {
-  background: rgba($diaper-color-black, 0.1);
-  color: $diaper-color-neutral-96;
+  @include nav-colors;
 }
 .skin-purple-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
 }
 .skin-purple-light .main-header .navbar .sidebar-toggle:hover {
-  color: $diaper-color-neutral-96;
-  background: rgba($diaper-color-black, 0.1);
+  @include nav-colors;
 }
 .skin-purple-light .main-header .navbar .sidebar-toggle {
   color: $diaper-color-white;
